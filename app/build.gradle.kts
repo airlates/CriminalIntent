@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.bignerdranch.android.criminalintent"
-        minSdk = 24
+        minSdk = 21
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -45,4 +45,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("androidx.lifecycle:lifecycle-extensions:2.0.0")
+    implementation("androidx.recyclerview:recyclerview:1.0.0")
 }
